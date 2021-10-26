@@ -1,0 +1,298 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+body{
+    background-image: url('./images/bg.jpg');
+    max-width: 100%;
+    background-size: auto;
+}
+
+#nav{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding: 2% 5% 0 5%;
+}
+
+.h-links{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1em;
+}
+
+.h-links:hover{
+    color: chocolate;
+    border-bottom:1px #000 solid;
+    cursor: pointer;
+}
+
+.left-m i{
+    font-size: 1.5em;
+}
+
+.center-m{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#ham{
+ font-size: 1.5em;
+}
+
+.small-desc{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    word-spacing: 0.1em;
+}
+
+.big-desc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    font-weight: 700; 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+    max-width: 100%;
+    align-items: center;
+    padding: 5%;
+    padding: 5% 5% 0 5%;
+    justify-content: center;
+}
+
+.first, .second, .third{
+    width:33%;
+}
+
+#coffee{
+    max-width: 100%;
+}
+
+
+.final-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.final-bottom i{
+    font-size: 2.5em;
+    color: #000;
+    background-color: transparent;
+}
+
+.third{
+    display: flex;
+    align-items: center;
+}
+
+.hr{
+    width: 5em;
+    height: 1px;
+    background-color: black;
+}
+
+.box{
+    height: 100%;
+    width: 80%;
+    border: 2px solid #000;
+    padding: 3%;
+}
+
+.b-heading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.b-desc{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.box p
+{
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+#cup{
+    max-width: 100%;
+}
+
+.order{
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    padding: 5%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+#coffee{
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: transform;
+    transform: rotate(90deg);
+}
+@media screen and (max-width:767px){
+    #nav{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        padding: 2% 5% 0 5%;
+    }
+    
+    .h-links{
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-size: 1em;
+    }
+    
+    .h-links:hover{
+        color: chocolate;
+        border-bottom:1px #000 solid;
+        cursor: pointer;
+    }
+    
+    .left-m i{
+        font-size: 1.5em;
+    }
+    
+    .center-m{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+    #ham{
+     font-size: 1.5em;
+    }
+    
+    .small-desc{
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        word-spacing: 0.1em;
+    }
+    
+    .big-desc{
+        font-family: 'Oswald', sans-serif;
+        font-size: 4em;
+        font-weight: 700;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+        align-items: center;
+        padding: 5%;
+        padding: 5% 5% 5% 5%;
+        justify-content: center;
+    }
+    
+    .first, .second, .third{
+        width: 100%;
+    }
+    
+    #coffee{
+        max-width: 50%;
+    }
+    
+    
+    .final-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .final-bottom i{
+        font-size: 2.5em;
+        color: #000;
+        background-color: transparent;
+    }
+    
+    .third{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    .hr{
+        width: 5em;
+    height: 1px;
+    background-color: black;
+    transform: rotate(
+90deg);
+    margin-bottom: 10%;
+    }
+    
+    .box{
+        height: 100%;
+        width: 80%;
+        border: 2px solid #000;
+        padding: 3%;
+    }
+    
+    .b-heading{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    
+    .b-desc{
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    }
+    .box p
+    {
+        padding-bottom: 5%;
+        padding-top: 2%;
+    }
+    #cup{
+        max-width: 100%;
+    }
+    
+    .order{
+        color: #fff;
+        background-color: #000;
+        border: 0;
+        padding: 5%;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .button-div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #coffee{
+        overflow: hidden;
+        transition-duration: 1s;
+        transition-property: transform;
+        transform: rotate(90deg);
+    }
+
+    .second{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15%;
+    }
+}
+
+
+@media screen and (min-width:767px) and (max-width:1180px){
+    .big-desc{
+        font-size: 3em;
+    }
+}

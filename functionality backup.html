@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <img id="img" src="./images/table.jpg" />
+  <button id="front">Rotate Image</button>
+  <button id="back">Back</button>
+  <script>
+    let rotation = 0;
+    var c = 0;
+    function rotateImg() {
+      rotation += 45; // add 90 degrees, you can change this as you want
+      if (rotation === 360) { 
+        // 360 means rotate back to 0
+        rotation = 0;
+      }
+      document.querySelector("#img").style.transform = `rotate(${rotation}deg)`;
+    }
+
+    function countRoate() {
+      rotation -= 45; // add 90 degrees, you can change this as you want
+      if (rotation === 0) { 
+        // 360 means rotate back to 0
+        rotation = 360;
+      }
+      document.querySelector("#img").style.transform = `rotate(${rotation}deg)`;
+    }
+
+    document.querySelector("#front").addEventListener('click',() => {
+     rotateImg();
+     c += 1;
+     if(c === 8){
+         c = 0;
+     }
+     console.log(c);
+    });
+    
+
+    document.querySelector("#back").addEventListener('click',() => {
+     countRoate();
+     c -= 1;
+     if(c === 0){
+         c=8;
+     }
+     console.log(c);
+    });
+
+  </script>
+    </div>
+</body>
+</html>
