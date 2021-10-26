@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 body{
@@ -52,8 +52,9 @@ body{
 }
 
 .big-desc{
-    font-family: 'Oswald', sans-serif;
-    font-size: 5em;
+   /* font-family: 'Oswald', sans-serif;*/
+   font-family: 'Bebas Neue', cursive;
+    font-size: 8em;
     font-weight: 700; 
 }
 
@@ -184,7 +185,8 @@ body{
     }
     
     .big-desc{
-        font-family: 'Oswald', sans-serif;
+        /*font-family: 'Oswald', sans-serif;*/
+        font-family: 'Bebas Neue', cursive;
         font-size: 4em;
         font-weight: 700;
     }
@@ -293,6 +295,6 @@ body{
 
 @media screen and (min-width:767px) and (max-width:1180px){
     .big-desc{
-        font-size: 3em;
+        font-size: 5em;
     }
 }
